@@ -1,0 +1,11 @@
+uuid: 996475cb-8200-4699-9662-9874a77dacf4
+name: Shelepen
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: user
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en

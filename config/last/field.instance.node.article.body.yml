@@ -1,0 +1,21 @@
+uuid: 720c7769-6ff0-4bd1-be00-eda305f4831e
+langcode: en
+status: true
+dependencies:
+  entity:
+    - field.field.node.body
+    - node.type.article
+id: node.article.body
+label: Body
+field_name: body
+entity_type: node
+bundle: article
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_function: ''
+settings:
+  display_summary: true
+  text_processing: true
+field_type: text_with_summary

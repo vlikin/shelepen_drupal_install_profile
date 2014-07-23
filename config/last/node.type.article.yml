@@ -1,0 +1,18 @@
+uuid: 74aaf429-f107-4837-a402-022eed2e2808
+langcode: en
+status: true
+dependencies: {  }
+name: Article
+type: article
+description: 'Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'
+help: ''
+title_label: Title
+settings:
+  node:
+    options:
+      status: true
+      promote: true
+      sticky: false
+      revision: false
+    preview: 1
+    submitted: true

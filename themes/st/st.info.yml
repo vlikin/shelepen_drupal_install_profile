@@ -1,0 +1,21 @@
+name: Shelepen
+type: theme
+description: 'This is specified theme for the project - Shelepen'
+package: Core
+version: VERSION
+core: 8.x
+regions:
+  content: Content
+  language_switcher: Language Switcher
+  footer_first: Footer First
+  footer_second: Footer Second
+  hidden: Hidden
+scripts:
+  - js/script.js
+stylesheets:
+  all:
+    - style/css/style.css
+  print:
+    - style/css/print.css
+  screen:
+    - style/css/screen.css

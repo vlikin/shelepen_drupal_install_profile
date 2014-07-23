@@ -1,0 +1,9 @@
+name: S Page
+type: module
+description: 'It defines a widget that renders referenced fields.'
+package: Core
+version: VERSION
+core: 8.x
+dependencies:
+  - node
+  - bxslider

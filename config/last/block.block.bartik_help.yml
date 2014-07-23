@@ -1,0 +1,23 @@
+uuid: ffb2b903-f79b-42ed-8802-2ff4e462ca9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+id: bartik_help
+theme: bartik
+region: help
+weight: 0
+provider: null
+plugin: system_help_block
+settings:
+  visibility: {  }
+  id: system_help_block
+  label: 'System Help'
+  provider: system
+  label_display: '0'
+  cache:
+    max_age: -1
+    contexts: {  }

@@ -1,0 +1,21 @@
+uuid: 09380149-ecb6-49e5-973b-59a40e6a5245
+langcode: en
+status: true
+dependencies:
+  entity:
+    - block_content.type.basic
+    - field.field.block_content.body
+id: block_content.basic.body
+label: Body
+field_name: body
+entity_type: block_content
+bundle: basic
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_function: ''
+settings:
+  display_summary: false
+  text_processing: true
+field_type: text_with_summary

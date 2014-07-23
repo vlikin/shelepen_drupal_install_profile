@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Main theme preprocess file.
+ */
+
+/**
+ * Implements hook_preprocess_html.
+ */
+function st_preprocess_html(&$variables) {
+}
+
+/**
+ * Implements hook_preprocess_page
+ */
+function st_preprocess_page(&$variables) {
+}

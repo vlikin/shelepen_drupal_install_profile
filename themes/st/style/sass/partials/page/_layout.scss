@@ -1,0 +1,15 @@
+.l-container {
+  @include container;
+
+  header {}
+  main {
+    @include clearfix;
+    div.l-content {
+      @include column(24, true);
+    }
+  }
+
+  footer {
+    
+  }
+}

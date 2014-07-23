@@ -1,0 +1,20 @@
+uuid: 9e29dd5a-b7d5-456b-9700-ae9821cee044
+langcode: en
+status: true
+dependencies:
+  entity:
+    - field.field.node.field_type
+    - node.type.article
+id: node.article.field_type
+label: Type
+field_name: field_type
+entity_type: node
+bundle: article
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_function: ''
+settings:
+  text_processing: 0
+field_type: text

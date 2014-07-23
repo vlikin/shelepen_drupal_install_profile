@@ -1,0 +1,18 @@
+uuid: bf091904-2618-4e31-bf00-bf9a93d68564
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference
+    - node
+id: node.field_article
+name: field_article
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: entity_reference
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }

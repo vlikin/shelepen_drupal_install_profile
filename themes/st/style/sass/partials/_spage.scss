@@ -1,0 +1,41 @@
+.spage-article {
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .data {
+    
+  }
+}
+
+.spage-article {
+  .data {
+    .image_side {
+      @include clearfix;
+      .side{
+        float: left;
+        width: $blueprint-container-size / 2;
+
+        &.data {
+          .label {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 5px;
+          }
+          .body {
+          }
+        }
+      }
+    }
+  }
+  
+  &.image_right .data {
+    .image_side {
+      @include clearfix;
+      .side{
+        float: right;
+      }
+    }
+  }
+
+}

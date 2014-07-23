@@ -1,0 +1,83 @@
+ul.tabs {
+  padding: 5px;
+  li {
+    color: $black-color;
+    margin: 0px;
+
+    a {
+      background: $lightblue-color;
+      color: $black-color;
+
+      &:hover {
+        color: $red-color;
+        background: $lightblue-color;
+      }
+    }
+    &.active {
+      a {
+        color: $white-color;
+      }
+    }
+    &:first-child {
+      a {
+        @include border-left-radius(5px);
+      }
+    }
+    &:last-child {
+      a {
+        @include border-right-radius(5px);
+      }
+    }
+    &.active {
+      
+    }
+  }
+}
+
+.field-node--body {
+  .field-item {
+    padding: 10px;
+  }
+}
+
+body.page-ru-node,
+body.page-node,
+body.page-uk-node
+{
+  main[role=main] {
+    .views-row {
+      article.node {
+        padding-top: 10px;
+        .content {
+          .field {
+            &.field-name-field-image {
+              @include column(12);
+            }
+            .field-name-body {
+              @include column(12, true);
+            }
+          }
+        }
+      }
+      &.views-row-even {
+        article.node {
+          .content {
+            .field {
+              &.field-name-field-image {
+                @include column(12, true);
+                float: right;
+              }
+              &.field-name-body {
+                @include column(12);
+                float: right;
+              }
+            }
+          }
+        }
+      }
+    }
+    .feed-icon {
+      float: right;
+    }
+  }
+}

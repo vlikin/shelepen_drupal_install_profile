@@ -1,0 +1,39 @@
+html {
+  font-family: $font-family, sans-serif;
+}
+
+body {
+  background: $white-color;
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+  
+  ul {
+    list-style-position: inside;
+    li {
+    }
+  }
+}
+
+p {
+}
+
+a {
+  text-decoration: none;
+  color: $blue-color;
+
+  &:hover {
+    color: $red-color;
+  }
+}

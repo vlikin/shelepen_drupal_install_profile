@@ -1,0 +1,18 @@
+uuid: 60d648c1-2183-4975-8000-b69773967c78
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_type
+name: field_type
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }

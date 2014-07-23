@@ -1,0 +1,43 @@
+<?php
+/**
+ * @file It contains module hooks.
+ */
+module_load_include('inc', 'bxslider');
+
+/**
+ * Implements hook_theme().
+ */
+function bxslider_theme() {
+  return array(
+    'bxslider_wrapper' => array(
+      'template' => 'bxslider-wrapper',
+      'render element' => 'element',
+     ),
+  );
+}
+
+/**
+ * Implements hook_library_info.
+ */
+function bxslider_library_info() {
+  $libraries_path = 'sites/all/libraries/';
+  $libraries['bxslider'] = array(
+    'title' => 'bxSlider',
+    'website' => 'http://bxslider.com/',
+    'version' => '4.1.1',
+    'js' => array(
+      $libraries_path . 'jquery.bxslider/jquery.bxslider.min.js',
+    ),
+    'css' => array(
+      $libraries_path . 'jquery.bxslider/jquery.bxslider.css' => array(
+        'type' => 'file',
+        'media' => 'screen',
+      ),
+    ),
+    'dependencies' => array(
+      array('system', 'jquery.ui.core'),
+    ),
+  );
+
+  return $libraries;
+}

@@ -1,0 +1,15 @@
+uuid: fece9a14-1e66-421f-a658-8816f8c04115
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.user
+targetEntityType: user
+bundle: user
+types:
+  - 'schema:Person'
+fieldMappings:
+  name:
+    properties:
+      - 'schema:name'

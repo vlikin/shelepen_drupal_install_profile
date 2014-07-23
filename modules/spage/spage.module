@@ -1,0 +1,31 @@
+<?php
+/**
+ * @file The main module file.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function spage_theme() {
+  return array(
+    'spage_article_wrapper' => array(
+      'template' => 'spage-article-wrapper',
+      'render element' => 'element',
+    ),
+    'spage_article_image_side' => array(
+      'template' => 'spage-article-image_side',
+      'render element' => 'element',
+    ),
+  );
+}
+
+/**
+ * Implements hook_views_query_alter.
+ * 
+ * @see https://drupal.org/comment/8295017#comment-8295017
+ */
+function spage_views_query_alter($view) {
+  if ($view->storage->id == 'frontpage') {
+    $view->query->distinct =TRUE;
+  }
+}

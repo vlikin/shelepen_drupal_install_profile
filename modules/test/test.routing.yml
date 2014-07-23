@@ -1,0 +1,7 @@
+test.test:
+  path: '/test/test'
+  defaults:
+    _content: '\Drupal\test\Controller\TestController::testRender'
+    _title: 'Test'
+  requirements:
+    _permission: 'access content'

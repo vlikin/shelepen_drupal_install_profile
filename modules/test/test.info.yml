@@ -1,0 +1,8 @@
+name: Test
+type: module
+description: 'It contains test code.'
+package: Core
+version: VERSION
+core: 8.x
+dependencies:
+  - node

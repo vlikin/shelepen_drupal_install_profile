@@ -1,0 +1,47 @@
+uuid: 5c2919d5-356c-4eea-ad47-71f9f46f12ee
+langcode: en
+status: true
+dependencies:
+  entity:
+    - field.instance.node.page.body
+    - field.instance.node.page.field_article
+    - node.type.page
+  module:
+    - entity_reference
+    - path
+    - text
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  title:
+    type: string
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+  body:
+    type: text_textarea_with_summary
+    weight: 31
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_article:
+    weight: 32
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      autocomplete_type: tags
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+hidden: {  }
